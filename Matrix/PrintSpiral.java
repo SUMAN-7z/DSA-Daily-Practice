@@ -16,11 +16,9 @@ public class PrintSpiral {
                 System.out.print(arr[i][endCol] + " ");
             }
 
-            if (startRow < endRow) {
                 for (int j = endCol - 1; j >= startCol; j--) {
                     System.out.print(arr[endRow][j] + " ");
                 }
-            }
 
             if (startCol < endCol) {
                 for (int i = endRow - 1; i >= startRow + 1; i--) {
@@ -38,10 +36,8 @@ public class PrintSpiral {
     public static void main(String[] args) {
         int arr[][] = {
                 { 1, 2, 3, 4 },
-                { 5, 6, 7, 8 },
-                { 9, 10, 11, 12 },
-                { 13, 14, 15, 16 }
+                
         };
-        spiral(arr);
+        spiralprint(arr);
     }
 }
